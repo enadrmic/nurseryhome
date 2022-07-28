@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Dom za starije i nemoćne - Brnjaci</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo/logo_orange.png"></a>
+            <h2 style="font-size: 15px; color: white; font-weight: 400; padding-left: 1px;">Dom za starije i nemoćne - BRNJACI</h2>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="onama.html">O NAMA</a></li>
+                    <li><a href="aktivnosti.html">AKTIVNOSTI</a></li>
+                    <li><a href="rezervirajsada.html">REZERVIRAJ SADA</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>AKTIVNOSTI</h1>
+    </section>
+
+<!-- section AKTIVNOSTI -->
+
+<section class="tkosmomi">
+
+    <h1>Svakodnevne aktivnosti</h1>
+    <p>Pellentesque tincidunt ac leo hendrerit finibus. Donec in magna in lacus tristique iaculis a eu purus.</p>
+    
+    <div class="row">
+        <div class="course-col">
+            <h3>Medicinska njega</h3>
+            <p>Quisque odio est, porta quis tortor sit amet, vulputate varius urna. Praesent nulla urna, vestibulum blandit nunc ultrices, luctus molestie magna.</p>
+        </div>
+        <div class="course-col">
+            <h3>Kvalitetni obroci</h3>
+            <p>Quisque odio est, porta quis tortor sit amet, vulputate varius urna. Praesent nulla urna, vestibulum blandit nunc ultrices, luctus molestie magna.</p>
+        </div>
+        <div class="course-col">
+            <h3>Svakodnevna druženja i slavlja</h3>
+            <p>Quisque odio est, porta quis tortor sit amet, vulputate varius urna. Praesent nulla urna, vestibulum blandit nunc ultrices, luctus molestie magna.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- section mogucnosti -->
+
+<section class="facilities">
+
+    <h1>Kako to sve izgleda?</h1>
+    <p>Pellentesque tincidunt ac leo hendrerit finibus. Donec in magna in lacus tristique iaculis a eu purus.</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/nurseryhome3.jpeg">
+            <h3>Sklapamo prijateljstva...</h3>
+            <p>Pellentesque tincidunt ac leo hendrerit finibus. Donec in magna in lacus tristique iaculis a eu purus.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/hrana.png">
+            <h3>Kvalitetno se hranimo...</h3>
+            <p>Pellentesque tincidunt ac leo hendrerit finibus. Donec in magna in lacus tristique iaculis a eu purus.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/slavlje.jpg">
+            <h3>...i uvijek nađemo razlog za slavlje!</h3>
+            <p>Pellentesque tincidunt ac leo hendrerit finibus. Donec in magna in lacus tristique iaculis a eu purus.</p>
+        </div>
+    </div>
+    
+</section>
+
+
+<!-- section Footer -->
+<section class="footer">
+    <h4>O nama</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet lorem ligula, at consectetur est dictum ut.<br> Ut mi tortor, pretium sit amet ornare vitae, convallis sit amet nunc. Duis ultrices tempor neque.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Ena Drmić</p>
+    <p class="deltico">&copy; Copyright DELTICO d.o.o. 2022</p>
+</section>
+
+
+<!-- Javascript za Menu na mobilnim uredajima -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

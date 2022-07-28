@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Dom za starije i nemoćne - Brnjaci</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo/logo_orange.png"></a>
+            <h2 style="font-size: 15px; color: white; font-weight: 400; padding-left: 1px;">Dom za starije i nemoćne - BRNJACI</h2>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="onama.html">O NAMA</a></li>
+                    <li><a href="aktivnosti.html">AKTIVNOSTI</a></li>
+                    <li><a href="rezervirajsada.html">REZERVIRAJ SADA</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>O NAMA</h1>
+    </section>
+
+<!--  sadrzaj O NAMA stranice  -->
+
+<section class="o-nama">
+
+    <div class="row">
+      <div class="onama-col">
+         <h1>Dom za starije i nemoćne "Brnjaci" osnovan je 2013.</h1>
+         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+         <a href="" class="hero-btn red-btn">PROČITAJ VIŠE</a>
+        </div>   
+      <div class="onama-col">
+          <img src="images/nurseryhome5.jpg">
+      </div>
+    </div>
+
+
+</section>
+
+
+<!-- section Footer -->
+<section class="footer">
+    <h4>O nama</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet lorem ligula, at consectetur est dictum ut.<br> Ut mi tortor, pretium sit amet ornare vitae, convallis sit amet nunc. Duis ultrices tempor neque.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Ena Drmić</p>
+    <p class="deltico">&copy; Copyright DELTICO d.o.o. 2022</p>
+</section>
+
+
+<!-- Javascript za Menu na mobilnim uredajima -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

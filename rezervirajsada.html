@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Dom za starije i nemoćne - Brnjaci</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo/logo_orange.png"></a>
+            <h2 style="font-size: 15px; color: white; font-weight: 400; padding-left: 1px;">Dom za starije i nemoćne - BRNJACI</h2>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="onama.html">O NAMA</a></li>
+                    <li><a href="aktivnosti.html">AKTIVNOSTI</a></li>
+                    <li><a href="rezervirajsada.html">REZERVIRAJ SADA</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>REZERVIRAJ SADA!</h1>
+    </section>
+
+
+<!-- section stranice Rezerviraj sada -->
+
+<section class="rezervacije">
+
+    <div class="row">
+        <div class="reservation-left">
+            <img src="images/nurseryhome1.png">
+            <h2>Termini i ponude 2022.</h2>
+            <p>Fusce sagittis non risus ut finibus. Vestibulum sollicitudin purus neque, at aliquet risus venenatis eu. Quisque ut bibendum lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean et luctus leo, nec facilisis lorem. Pellentesque ac efficitur tortor, eget aliquam sem.<br> Nam placerat bibendum imperdiet. Donec volutpat nulla ullamcorper euismod mattis. Vestibulum sed sem ac nulla feugiat gravida vitae vel nulla. Maecenas sollicitudin tellus id ante vestibulum volutpat. In in blandit nisi. Nunc vestibulum accumsan augue. Nullam magna purus, finibus vitae elit vel, pellentesque vehicula felis. Praesent gravida vitae libero sit amet mollis. Fusce nec euismod nunc. Ut luctus viverra nunc in venenatis. Proin vehicula purus vehicula libero facilisis, quis sagittis turpis posuere.<br>Nam placerat bibendum imperdiet. Donec volutpat nulla ullamcorper euismod mattis. Vestibulum sed sem ac nulla feugiat gravida vitae vel nulla. Maecenas sollicitudin tellus id ante vestibulum volutpat. In in blandit nisi. Nunc vestibulum accumsan augue. Nullam magna purus, finibus vitae elit vel, pellentesque vehicula felis. Praesent gravida vitae libero sit amet mollis. Fusce nec euismod nunc. Ut luctus viverra nunc in venenatis. Proin vehicula purus vehicula libero facilisis, quis sagittis turpis posuere.</p>
+       
+            <div class="comment-box"> 
+                <h3>Ostavite komentar!</h3>
+                <form class="comment-form">
+                     <input type="text" placeholder="Unesite ime">
+                     <input type="email" placeholder="Unesite e-mail">
+                     <textarea rows="5" placeholder="Vaš komentar"></textarea>
+                     <button type="submit" class="hero-btn red-btn">Pošalji</button>
+                </form>
+            </div>
+       
+       
+        </div>
+        <div class="reservation-right">
+           <h3>Analiza prethodnih godina</h3>
+           <div>
+              <span>2014. godina</span>
+              <span>21</span>
+           </div>
+           <div>
+              <span>2015. godina</span>
+              <span>24</span>
+            </div>
+            <div>
+              <span>2016. godina</span>
+              <span>65</span>
+            </div>
+            <div>
+              <span>2017. godina</span>
+              <span>55</span>
+            </div>
+            <div>
+              <span>2019. godina</span>
+              <span>41</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+<!-- section Footer -->
+<section class="footer">
+    <h4>O nama</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet lorem ligula, at consectetur est dictum ut.<br> Ut mi tortor, pretium sit amet ornare vitae, convallis sit amet nunc. Duis ultrices tempor neque.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Ena Drmić</p>
+    <p class="deltico">&copy; Copyright DELTICO d.o.o. 2022</p>
+</section>
+
+
+<!-- Javascript za Menu na mobilnim uredajima -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
